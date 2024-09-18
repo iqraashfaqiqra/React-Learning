@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ClassPerson from './component/ClassPerson'
-import FunctionPerson  from './component/FunctionPerson';
+import Person from "./component/Person"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ClassPerson name="Iqra" age="25" />
-    <FunctionPerson name="Amna" age="40"/>
+    <Person/>
   </React.StrictMode>
 );
 

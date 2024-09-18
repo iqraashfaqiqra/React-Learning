@@ -80,3 +80,51 @@
                 ......................
                 <FunctionPerson name="Amna" age="40"/>
                 */
+//State
+/*
+State Is built-in Object of React Component
+Function is stateless Component(if we want to use state then we use hook).
+*/
+// Class Based State 
+              /*
+              import React from "react"
+              class Project extends React.Component
+              {
+               constructor()
+               {
+                 super();
+                 this.state={
+                 name:"iqra",
+                 age:10
+                 }
+               }
+                Chnage()
+                {
+                 this.setstate({name:"Ayesha",age:10});
+                }
+                render()
+                {
+                return(
+                <>
+                <h1>{this.state.name} and age {this.state.age}</h1>
+                <button onclick={()=>{this.change()}}>Update</button>
+                </>
+                ) 
+                }
+              }
+            */
+//Function Based Hook
+            /*
+            import React, { useState } from 'react'
+
+            export default function Person() {
+                let [text,settext]=useState('Iqra');
+            return (
+                <div>
+                <h1>{text}</h1>
+                <button onClick={()=>settext("Ayesha")}>Change</button>
+                </div>
+            )
+            }
+            */
+    
