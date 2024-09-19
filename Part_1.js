@@ -114,6 +114,9 @@ Function is stateless Component(if we want to use state then we use hook).
               }
             */
 //Function Based Hook
+
+            // import { Component } from "react"
+
             /*
             import React, { useState } from 'react'
 
@@ -127,4 +130,76 @@ Function is stateless Component(if we want to use state then we use hook).
             )
             }
             */
-    
+// Event Handling With Class Based Component 
+//............1st Method.............
+            /*
+            constructor()
+            {
+                super()
+                this.state={
+                name:"Iqra",
+                age:"25"
+                }
+            }
+            BtnChnge()
+            {
+                console.log(this.state)
+            }
+            render()
+            {
+            return(
+            <>
+            <button onClick={()=>this.BtnChnge()}>Click Me</button> 
+            </>
+            )
+            }  
+            */
+//............2nd Method.............
+// { <button onClick={this.BtnChnge.bind(this)}>Click Me</button>  }
+//...........3rd Method
+/*
+            constructor()
+            {
+                super()
+                this.state={
+                name:"Iqra",
+                age:"25"
+                }
+                this.BtnChnge=this.BtnChnge.bind(this);
+            }
+            BtnChnge()
+            {
+                console.log(this.state)
+            }
+            render()
+            {
+            return(
+            <>
+            <button onClick={this.BtnChnge}>Click Me</button> 
+            </>
+            )
+            }  
+            */
+//......4th Method.................
+/*
+            constructor()
+            {
+                super()
+                this.state={
+                name:"Iqra",
+                age:"25"
+                }
+            }
+            BtnChnge=()=>
+            {
+                console.log(this.state)
+            }
+            render()
+            {
+            return(
+            <>
+            <button onClick={this.BtnChnge}>Click Me</button> 
+            </>
+            )
+            }  
+            */
