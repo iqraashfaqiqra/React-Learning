@@ -203,3 +203,68 @@ Function is stateless Component(if we want to use state then we use hook).
             )
             }  
             */
+//Rendering List with class 
+            /*
+            Class App extends React.component{
+              constructor()
+              {
+                super();
+                this.state={
+                  person:[
+                         {id:1,name:"iqra",age:25},
+                         {id:2,name:"Ayesha",age:20},
+                         {id:3,name:"Fatima",age:30}
+                        ]
+                }
+              }
+                render()
+                {
+                  this.state.map(el=>{
+                     return(
+                            <Person name={el.name} age={el.age}/>
+                           )
+                    })
+                }
+            }
+            */
+           /*Person.jsx
+                constructor(props){
+                    super(props);
+                    this.props=props;
+                }
+                render()
+                {
+                    <h1>my Name is {this.props.name}</h1>
+                }
+           */
+//Rendering List with function
+                /*
+                const person=
+                [
+                {id:1,name:"iqra",age:25},
+                {id:2,name:"Ayesha",age:20},
+                {id:3,name:"Fatima",age:30}
+                ]
+                return(
+                <>
+                {person.map(ele=>{
+                    return(
+                    <Person name={ele.name} age={ele.age}/>
+                    )
+                })}
+                </>
+                ) 
+                */
+               /*
+                const Person=(props)=>
+                {
+                return(
+                    <>
+                    <div className={mod.con}>
+                        <h3>my Name is {props.name}</h3>
+                        <h3>my Age is {props.age}</h3>
+                    </div>
+                    </>
+                )
+                }
+                */
