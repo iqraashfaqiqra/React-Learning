@@ -268,3 +268,26 @@ Function is stateless Component(if we want to use state then we use hook).
                 )
                 }
                 */
+// ........................................
+// Form Handling 
+/*
+1st(Access Input value when user enter text in text_Box)
+                chnage=(e)=>{
+                    console.log(e.target.value);
+                    }
+                render()
+                {
+                  return(
+                         <>
+                            <form>
+                              <input type="text" onChange={this.change}/>
+                              <select onChange={this.chnage}>
+                                 <option value="Pakistan">Pakistan</option>
+                                 <option value="Lahore">Lahore</option>
+                              </select>
+                            </form>
+                         </>
+                         )
+                }
+->2nd(Access Input Value when user enter Submit Button)
+*/
