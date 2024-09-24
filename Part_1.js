@@ -269,7 +269,7 @@ Function is stateless Component(if we want to use state then we use hook).
                 }
                 */
 // ........................................
-// Form Handling with Class Component.
+// Form Handling.
 /*
 1st(Access Input value when user enter text in text_Box)
                 chnage=(e)=>{
@@ -316,4 +316,12 @@ Function is stateless Component(if we want to use state then we use hook).
                       </>
                     )
             }
+ .........................................
+->3 (controlled componet .....input value will set from Set Function)
+        this.state={text:""}
+        change=(e)=>
+        {
+            const text=e.target.value;
+        }
+        <input type="text" name="text" value={this.state.text} onChange={this.change}
 */
