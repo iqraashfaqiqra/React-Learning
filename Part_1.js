@@ -269,7 +269,7 @@ Function is stateless Component(if we want to use state then we use hook).
                 }
                 */
 // ........................................
-// Form Handling 
+// Form Handling with Class Component.
 /*
 1st(Access Input value when user enter text in text_Box)
                 chnage=(e)=>{
@@ -290,4 +290,30 @@ Function is stateless Component(if we want to use state then we use hook).
                          )
                 }
 ->2nd(Access Input Value when user enter Submit Button)
+           this.state={
+           text:null,
+           option:null
+           }
+           fun=(e)=>
+           {
+              e.preventDefault();
+              const text=e.target.text.value;
+              const option=e.target.option.value;
+              this.setstate({text,option},()=>{console.log(this.state)});
+              e.target.text.value="";
+            }
+            render()
+            {
+              return(
+                      <>
+                          <form>
+                           input type="text" name="text";
+                            <selection name="option">
+                              option 
+                            </selection>
+                            <button>Submit</button>
+                          </form>
+                      </>
+                    )
+            }
 */
