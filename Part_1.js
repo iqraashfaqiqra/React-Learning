@@ -473,8 +473,8 @@ Registeration.jsx
 ...................................
 Customized Button when flag 1 then 50% otherwsie 100%
        const styledBtn=Styled.button `
-         display:&{props=>props.flag?"inline":"block"};
-         width:&{props=>props.flag?"50%":"100%"}
+         display:&{props=>props.flag==="1"?"inline":"block"};
+         width:&{props=>props.flag==="1"?"50%":"100%"}
          padding:10px solid &{props=>props.color};
          color:green;         
          `
