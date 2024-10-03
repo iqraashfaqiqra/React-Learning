@@ -27,3 +27,51 @@
    </>
    )
 */
+// ...............................
+/*
+Get authenticate with Email and password.
+website firebase->authenticate->email and password ok.
+index.jsx
+        import { getAuth,createUserWithEmailAndPassword } from "firebase/auth";
+        import app from './firebase'
+
+        const auth = getAuth(app);
+        const fun=()=>
+        {
+          createUserWithEmailAndPassword(auth,"iqraashfaq63@gmail.com","123@") //Giving Hard quoted value.
+        }
+*/
+// ...................
+/*
+Sign In Authentication
+            import React, { useState } from 'react'
+            import './Signup.css'
+            import {getAuth,signInWithEmailAndPassword} from 'firebase/auth'
+            import app from './Firebase'
+            const auth=getAuth(app);
+
+            export default function SignIn() {
+                let [email,setemail]=useState(" ");
+                let [password,setpassword]=useState(" ");
+                const sub=()=>
+                {
+                    console.log(email,password)
+                    signInWithEmailAndPassword(auth,email,password).then(val=>console.log(val,"Sucees")).catch(val=>console.log(val,"Error"))
+                }
+              
+              return (
+                <div>
+                        <div>
+                        <label htmlFor="">Email:</label>
+                        <input type="email" name="email" value={email} onChange={e=>setemail(e.target.value)} id="" />
+                        </div>
+                        <div>
+                            <label htmlFor="">Password:</label>
+                            <input type="password" name="password" id="" value={password} onChange={e=>setpassword(e.target.value)} />
+                        </div>
+                        <button onClick={sub}>SignIn</button>
+                </div>
+              )
+            }
+*/
+// ...................
