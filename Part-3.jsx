@@ -43,5 +43,17 @@ new Page open when user Click on Button
        <button onClick={()=>Navigation('button')}>Place Order</button>
     )
   Button.jsx
+     import {useNavigation} from 'react-router-dom'
+    const navigation=useNavigation();
     <h1>Order confirmed</h1>
+    <button on Click=(()=>Navigation(-1))>Go Back</button>
+*/
+// ....................
+/*
+No Found Route
+        nofound.jsx
+            <h1>No page Found</h1>
+        app.jsx
+             <Route path="*" element={<nofound/>}/>
+
 */
