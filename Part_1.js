@@ -4,6 +4,13 @@
         cd project
         npm start
         */
+//Vite Folder 
+      /*
+       npm create vite@latest
+       Enter Project Name
+       Select React
+       Select Javascript
+      */       
 // React Component 
         /*
         1-Class Based Component 
